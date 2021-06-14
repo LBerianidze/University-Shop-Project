@@ -3,10 +3,10 @@ require_once '../actions/conf.php';
 $item = array();
 try
 {
-    $st = $pdo->prepare('SELECT * FROM Product WHERE Id=:param1;');
+    $st = $db->getPDO()->prepare('SELECT * FROM Product WHERE Id=:param1;');
     $st->execute(['param1' => $_REQUEST['id']]);
     $item = $st->fetch(PDO::FETCH_OBJ);
-    $st = $pdo->prepare('SELECT * FROM ProductImage WHERE ProductId=:param1;');
+    $st = $db->getPDO()->prepare('SELECT * FROM ProductImage WHERE ProductId=:param1;');
     $st->execute(['param1' => $item->Id]);
     $images = $st->fetchAll(PDO::FETCH_OBJ);
 } catch (Exception $exception)
@@ -27,39 +27,7 @@ try
     <script src="/js/script.js" type="text/javascript"></script>
 </head>
 <body>
-<header class="header">
-    <div class="header_content">
-        <div class="logo_container">
-            <a href="/">
-                <img src="/assets/img/logo1.png">
-            </a>
-        </div>
-        <ul class="menu">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/about-us">Abous Us</a>
-            </li>
-            <li>
-                <a href="/contact">Support</a>
-            </li>
-            <li>
-                <div class="cart_container phone_cart_container">
-                    <a href="/cart">Cart</a>
-                </div>
-            </li>
-        </ul>
-        <div class="cart_container">
-            <a href="/cart">Cart</a>
-        </div>
-        <div class="hamburger_btn">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-</header>
+<?php include '../assets/header.php'?>
 <main class="page_content ">
     <div class="center_wrapper">
         <div class="notifications_container">
@@ -77,7 +45,7 @@ try
                 </div>
             <?php endif; ?>
         </div>
-        <div class="product_wrapper_inner clearfix">
+        <div class="clearfix">
             <div class="column">
                 <div class="img_preview">
                     <button class="close_btn">

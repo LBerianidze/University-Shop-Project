@@ -45,10 +45,10 @@ h2
 }
 .footer
 {
-    min-height:          100px;
-    margin-top:          auto;
-    background-color:    #545454;
-    color:               #cccccc;
+    min-height:       100px;
+    margin-top:       auto;
+    background-color: #545454;
+    color:            #cccccc;
 }
 .header_content
 {
@@ -87,15 +87,18 @@ h2
 }
 .cart_container > a
 {
-    padding:          10px 20px;
-    margin-right:     10px;
-    transition:       color .1s ease-in-out, background-color .1s ease-in-out, border-color .1s ease-in-out;
-    font-family:      "Roboto", Helvetica, Arial, sans-serif;
-    border-radius:    5px;
-    color:            #ffffff;
+    padding:       10px 20px;
+    margin-right:  10px;
+    transition:    color .1s ease-in-out, background-color .1s ease-in-out, border-color .1s ease-in-out;
+    font-family:   "Roboto", Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    color:         #ffffff;
+}
+.cart_container > a:first-child
+{
     background-color: #0095eb;
 }
-.cart_container > a:hover
+.cart_container > a:first-child:hover
 {
     background-color: #0082c9;
 }
@@ -297,12 +300,12 @@ h2
 }
 .product_item_cart_btn_link
 {
-    color:            #fff;
-    background: linear-gradient(to right, #6f6f6f, #6c6c6c, #4b4b4b);
-    border-radius:    1.55em;
-    display:          inline-flex;
-    text-align:       center;
-    padding:          .75em 1em;
+    color:         #fff;
+    background:    linear-gradient(to right, #6f6f6f, #6c6c6c, #4b4b4b);
+    border-radius: 1.55em;
+    display:       inline-flex;
+    text-align:    center;
+    padding:       .75em 1em;
 }
 .product_item_cart_btn_link:hover, .product_item_link:hover
 {
@@ -402,9 +405,9 @@ h2
 }
 .product_img_container img
 {
-    display:    block;
-    width:      100%;
-    height:     auto;
+    display: block;
+    width:   100%;
+    height:  auto;
 }
 .img_list_container
 {
@@ -420,13 +423,13 @@ h2
 }
 .img_list_container > li > img
 {
-    display:    block;
-    width:      100%;
-    cursor:     pointer;
-    margin:     0;
-    opacity:    .5;
-    max-width:  100%;
-    height:     auto;
+    display:   block;
+    width:     100%;
+    cursor:    pointer;
+    margin:    0;
+    opacity:   .5;
+    max-width: 100%;
+    height:    auto;
 }
 .img_list_container > li > img.active, .img_list_container > li > img:hover
 {
@@ -676,7 +679,7 @@ input[type=number]:focus
 }
 .cart-table td a
 {
-    color: #939393;
+    color:       #939393;
     font-weight: bolder;
 }
 .cart-table td a:hover
@@ -712,7 +715,7 @@ input[type=number]:focus
     border-radius:    3px;
     display:          inline-block;
     line-height:      24px;
-    border:     1px solid rgba(156, 156, 156, 0.62);
+    border:           1px solid rgba(156, 156, 156, 0.62);
     float:            none;
     padding:          10px 20px;
     color:            #ffffff;
@@ -720,7 +723,7 @@ input[type=number]:focus
     cursor:           not-allowed;
     opacity:          .5;
 }
-.cart-table .remove
+.cart-table .remove,.cart-table .export
 {
     border-radius:    3px;
     border:           0;
@@ -732,7 +735,7 @@ input[type=number]:focus
     font-weight:      lighter;
     cursor:           pointer;
 }
-.cart-table .remove span
+.cart-table .remove span,.cart-table .export span
 {
     margin:  0 -8px;
     display: inline-block;
@@ -940,10 +943,10 @@ input[type=number]:focus
 }
 .column
 {
-    position: relative;
-    margin: 0 1% 40px;
-    width: 47%;
-    display: inline-block;
+    position:       relative;
+    margin:         0 1% 40px;
+    width:          47%;
+    display:        inline-block;
     vertical-align: top;
 }
 .field-required
@@ -963,8 +966,8 @@ input[type=number]:focus
     padding:       10px 10px;
     border:        1px solid hsl(0, 0%, 86%);
     width:         350px;
-    margin-top: 8px;
-    outline: none;
+    margin-top:    8px;
+    outline:       none;
 }
 .fields-container textarea
 {
@@ -981,18 +984,18 @@ input[type=number]:focus
 }
 .submit-container > button
 {
-    border-radius: 3px;
-    padding: 15px 40px;
-    font-weight: 400;
-    border:1px solid rgba(0, 0, 0, 0.27);
-    color: #fff;
-    background-color: #939393 ;
-    font-size: 16px;
+    border-radius:    3px;
+    padding:          15px 40px;
+    font-weight:      400;
+    border:           1px solid rgba(0, 0, 0, 0.27);
+    color:            #fff;
+    background-color: #939393;
+    font-size:        16px;
 }
 .submit-container > button:hover
 {
     cursor:           pointer;
-    background-color: rgba(238, 238, 238, 0.76);
+    background-color: rgb(140 140 140);;
 }
 .result_message
 {
@@ -1008,22 +1011,22 @@ input[type=number]:focus
 }
 .checkout-button
 {
-    padding: 10px 20px!important;
-    cursor: pointer;
-    border: 1px solid lightgray;
-    display: block;
-    text-align: center;
-    margin-bottom: 1em;
-    font-size: 1.25em;
+    padding:          10px 20px !important;
+    cursor:           pointer;
+    border:           1px solid lightgray;
+    display:          block;
+    text-align:       center;
+    margin-bottom:    1em;
+    font-size:        1.25em;
     background-color: #939393 !important;
-    color: #fff;
-    border-radius: 3px;
+    color:            #fff;
+    border-radius:    3px;
 }
 .cart-table .actions button.allowed
 {
     background-color: #939393;
-    cursor: pointer;
-    opacity: 1;
+    cursor:           pointer;
+    opacity:          1;
 }
 .field-container input:nth-child(n+3)
 {
@@ -1040,12 +1043,137 @@ input[type=number]:focus
 .field-container.inline
 {
     display: inline-block;
-    width: 49%;
+    width:   49%;
 }
 .field-container.inline:nth-child(2n)
 {
     margin-left: 5px;
+    float:       right;
+}
+.auth_form
+{
+    border:        1px solid #d3ced2;
+    padding:       20px;
+    margin:        2em 0;
+    text-align:    left;
+    border-radius: 5px;
+}
+.auth_form input
+{
+    width: 100%;
+}
+.error-notification
+{
+    text-align:    center;
+    background:    #f1adad;
+    padding:       10px;
+    margin-bottom: 10px;
+}
+.dashboard_nav
+{
+    float:   left;
+    width:   30%;
+    display: block;
+}
+.dashboard_content
+{
     float: right;
+    width: 68%;
+}
+.dashboard_nav a
+{
+    border:          1px solid rgba(0, 0, 0, .04);
+    display:         block;
+    margin-bottom:   5px;
+    padding:         11px 10px;
+    text-decoration: none;
+    color:           #858585;
+}
+.dashboard_nav a.active
+{
+    background-color: #939393;
+    color:            white;
+}
+.dashboard_content a
+{
+    color: #939393;
+}
+.order-container
+{
+    margin-top:         5px;
+    display:            flex;
+    justify-content:    space-between;
+    border-radius:      5px;
+    border:             1px solid #f8dede;
+    padding:            10px;
+    padding-bottom:     0px;
+    -webkit-box-shadow: 0px 0px 13px 1px rgb(138 138 138 / 55%);
+    -moz-box-shadow:    0px 0px 13px 1px rgba(138, 138, 138, 0.55);
+    box-shadow:         0px 0px 13px 1px rgb(138 138 138 / 55%);
+}
+.order-container > div
+{
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+}
+.order-container p
+{
+    margin: 0 0 15px;
+}
+.order-container > div:last-child
+{
+    padding: 10px;
+}
+.order-container > div
+{
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+}
+.order-container .arrow
+{
+    box-sizing:   border-box;
+    height:       20px;
+    width:        20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 2px 2px 0px;
+    transform:    rotate(45deg);
+    transition:   border-width 150ms ease-in-out;
+}
+.orders-table
+{
+    border:          1px solid rgba(0, 0, 0, .1);
+    text-align:      left;
+    width:           100%;
+    border-radius:   5px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.orders-table th
+{
+    box-shadow:  inset 0 4px 3px -2px rgba(0, 0, 0, .04);
+    color:       #444;
+    font-weight: 700;
+    line-height: 1.5em;
+    border:      1px solid #dddddd !important;
+    padding:     8px;
+}
+.orders-table td
+{
+    color:            #626262;
+    line-height:      1.5em;
+    border:           1px solid #dddddd !important;
+    padding:          8px;
+}
+.orders-expand.closed
+{
+    display: none;
+}
+.showlogin
+{
+    cursor: pointer;
 }
 @media (max-width: 1236px)
 {
@@ -1089,13 +1217,15 @@ input[type=number]:focus
     }
     .product_item
     {
-        border-left: none;
+        border-left:  none;
         border-right: none;
+        flex:         1 0 33.3%;
+        max-width:    33.3%;
     }
 }
-@media (max-width: 600px)
+@media (max-width: 768px)
 {
-    .column,.checkout-items-container
+    .column, .checkout-items-container
     {
         width:   100%;
         margin:  0;
@@ -1178,7 +1308,8 @@ input[type=number]:focus
     }
     .menu > li
     {
-        margin-left: 0;
+        margin-left:   0;
+        margin-bottom: 5px;
     }
     .hamburger_btn
     {
@@ -1191,10 +1322,11 @@ input[type=number]:focus
     }
     .phone_cart_container
     {
-        display: block;
-        padding: 1.5em;
+        display:    block;
+        padding:    1.5em;
+        text-align: center;
     }
-    .phone_cart_container > a
+    .phone_cart_container > a:first-child
     {
         margin: 0px;
     }
@@ -1208,10 +1340,16 @@ input[type=number]:focus
         content:    "";
         left:       0;
     }
+    a.login_menuitem
+    {
+        display:    block;
+        background: transparent;
+        margin-top: 10px;
+    }
     .cart-table
     {
         /*width:  auto ;*/
-        margin: 0 auto 15px auto ;
+        margin: 0 auto 15px auto;
     }
     .cart-table thead, .product-image
     {
@@ -1235,7 +1373,7 @@ input[type=number]:focus
     .checkout-items-table tbody td:not(:first-child)
     {
         text-align: center;
-        display: table-cell;
+        display:    table-cell;
     }
     .checkout-items-table thead
     {
@@ -1286,7 +1424,7 @@ input[type=number]:focus
     .card_totals
     {
         margin: 0 auto;
-        width: 100%;
+        width:  100%;
     }
     .card_totals > .cart-table
     {
@@ -1294,8 +1432,13 @@ input[type=number]:focus
     }
     .submit-container
     {
-        width: 100%;
+        width:   100%;
         padding: 0 33px;
+    }
+    .dashboard_nav, .dashboard_content
+    {
+        float: none;
+        width: 100%;
     }
 }
 @media (max-width: 480px)
@@ -1309,7 +1452,7 @@ input[type=number]:focus
     }
     .fields-container input
     {
-        width:         100%;
+        width: 100%;
     }
     .field-container.inline:nth-child(2n)
     {

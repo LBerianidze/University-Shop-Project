@@ -104,4 +104,26 @@ $().ready(function ()
                 $('.hamburger_btn').removeClass('menu_opened');*/
     });
     $('.img_list_container').find('img:first').addClass('active');
+
+    $(document.body).on("click", "a.showlogin", function (e)
+    {
+        let d = $(e.currentTarget).attr('data-order-id');
+        d = $(`.expander-${d}`);
+        d.slideToggle();
+    });
+    $(document).on('click', '.product-remove .export', function (e)
+    {
+        let id = $(e.currentTarget).attr('data-user_id');
+        let data = {action: 'export_user_data', user_id: id};
+        $.ajax({
+            type: "POST", url: '/user/admin.php', data: data, success: function (response)
+            {
+                var link = document.createElement('a');
+                link.href = response;
+                link.download = `user_${id}.txt`;
+                link.click();
+                link.remove();
+            }
+        });
+    })
 });

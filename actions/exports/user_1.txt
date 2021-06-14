@@ -1,0 +1,18 @@
+Email: berianidze_luka@mail.ru
+Display Name: berianidze_luka
+Register Date: 2021-06-14 13:11:04
+Role: 1
+
+Orders Count: 2
+Summary spent: 82511 $
+
+1) Order: QMPMP-XGL1M-2QKUT 2021-06-14 13:30:34
+Antminer E9 – 3GH/s x 1 = 20000$
+Antminer S19 Pro 110TH/s x 1 = 3769$
+Antminer S19 – 95TH/s x 1 = 2767$
+
+2) Order: ROIYQ-X3MZB-SW5ID 2021-06-14 13:30:44
+Antminer S19j – 90TH/s x 8 = 40136$
+Antminer S19 Pro 110TH/s x 2 = 7538$
+Antminer S19 – 95TH/s x 3 = 8301$
+

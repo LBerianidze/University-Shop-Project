@@ -12,39 +12,7 @@
     <script src="/js/script.js" type="text/javascript"></script>
 </head>
 <body>
-<header class="header">
-    <div class="header_content">
-        <div class="logo_container">
-            <a href="/">
-                <img src="/assets/img/logo1.png">
-            </a>
-        </div>
-        <ul class="menu">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a class="active" href="/about-us">Abous Us</a>
-            </li>
-            <li>
-                <a href="/contact">Support</a>
-            </li>
-            <li>
-                <div class="cart_container phone_cart_container">
-                    <a href="/cart">Cart</a>
-                </div>
-            </li>
-        </ul>
-        <div class="cart_container">
-            <a href="/cart">Cart</a>
-        </div>
-        <div class="hamburger_btn">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-</header>
+<?php include '../assets/header.php'?>
 <main class="page_content">
     <div class="textinfo-container">
         <h2>About TSU</h2>
